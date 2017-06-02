@@ -1,0 +1,159 @@
+$blue : #4ebfe1;
+$fff : #fff;
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: sans-serif;
+}
+header{
+	background: $blue;
+	margin-bottom: 50px;
+}
+a{
+	text-decoration: none;	
+}
+p{
+	margin-bottom: 20px;
+}
+.logo{
+	padding-right: 100px;	
+	color: $fff;
+}
+.container{
+	width: 1170px;	
+	margin: 0 auto;	
+	padding: 0 15px;	
+	box-sizing: border-box;	
+}
+.button{
+	padding: 10px 20px;
+	display: inline-block;
+	vertical-align: middle;
+	border:1px solid $fff;
+	background: transparent;
+	cursor: pointer;
+	font-weight: lighter;	
+	border-radius: 4px;
+	margin: 10px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .3s;
+	&:hover{
+		color: $blue;
+		background: $fff;
+	}
+}
+.button.blue{
+	border-color:#beeae2;
+	color: #000;
+	text-transform: none;
+	margin: 0;
+	padding: 10px;
+	box-sizing: border-box;
+	&:hover{
+		color:#fff;
+		background: $blue;
+		text-decoration: none;
+	}
+}
+.button.red{
+	border-color:#fdcdc8;
+	color: #000;
+	text-transform: none;
+	margin: 0;
+	padding: 10px;
+	box-sizing: border-box;
+	&:hover{
+		color:#fff;
+		background: #fdcdc8;
+		text-decoration: none;
+	}
+}
+.button.green{
+	cursor: pointer;
+	background: #55d145;
+	&:hover{
+		border-color: $blue;
+		color:$fff;
+	}
+}	
+table{
+	width: 100%;
+	border-collapse: collapse;
+	a{
+		color: #40abcb;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+thead{
+	border-bottom:1px solid $blue;
+	
+	th{
+		padding: 10px;
+		&.sortorder{
+			cursor: pointer;
+			&::after{
+				content:'';
+				display: inline-block;
+				border: 10px solid transparent;	
+				border-top: 10px solid $blue;
+				margin-bottom: -12px;
+				margin-left: 5px;
+			}
+			&.reverse::after{
+				border: 10px solid transparent;	
+				border-bottom: 10px solid $blue;
+				margin-bottom: -2px;
+			}
+		}
+	}
+}
+tbody{
+	td{
+		padding: 10px;
+		vertical-align: top;
+		&.reverse{
+			background: #fcfefe;
+		}
+	}
+}
+
+// ====================================================== page CREATE ARTICLE
+
+form{
+	label{
+		margin-bottom: 20px;
+		font-size: 24px;
+		display: block;
+	}
+	input{
+		margin-bottom: 20px;
+	}
+	.input_title{
+		width: 100%;
+		box-sizing: border-box;
+	    padding: 10px;
+	    font-size: 18px;
+	}
+}
+
+// ====================================================== page  ARTICLE
+
+.article{
+	&_title{
+		float: left;
+		margin-bottom: 20px;
+	}
+	&_date{
+		float: right;
+	}
+	&_body{
+		clear: both;
+	}
+}

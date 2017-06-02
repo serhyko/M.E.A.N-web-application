@@ -1,0 +1,36 @@
+{
+  "name": "angular-todolist",
+  "version": "0.0.1",
+  "description": "Project for learning Angular",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rise2semi/angular-todolist.git"
+  },
+  "author": "Borys Semerenko <rise2semi@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/rise2semi/angular-todolist/issues"
+  },
+  "dependencies": {
+    "angular": "^1.5.9",
+    "angular-route": "^1.6.0",
+    "angular-sanitize": "^1.6.0",
+    "angular-ui-tinymce": "0.0.17",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "lodash": "^4.17.2",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.7.2",
+    "node-restful": "^0.2.5",
+    "restangular": "^1.5.2",
+    "tinymce": "^4.5.1",
+    "todomvc-app-css": "^2.0.6",
+    "todomvc-common": "^1.0.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-watch": "^4.3.11"
+  }
+}

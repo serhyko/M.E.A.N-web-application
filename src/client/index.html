@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Angular TODO-list</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-app="clientApp">
+
+	
+<header>
+  <div class="container">
+    <a class="logo" href="#!/"><strong>REST</strong></a>
+    <a class="button" href="#!/create/article"><span class="glyphicon glyphicon-plus"></span> Create article</a>
+  </div>
+</header>
+   <div class="container">
+   	<div ng-view=""></div>
+   </div>
+   
+    <!-- scripts bundle  -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

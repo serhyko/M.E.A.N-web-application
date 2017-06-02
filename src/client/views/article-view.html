@@ -1,0 +1,6 @@
+<article class="article article-{{ article._id }}">
+	<h1 class="article_title">{{ article.title }}</h3>
+	<h4 class="article_date">{{ article.cdate }}</h4>
+	<div class="article_body" id="bind-html-with-sanitize" ng-bind-html="article.body"></div>
+ <a ng-href="#!/article/{{ article._id }}/edit" class="button green">Edit</span></a>
+</article>

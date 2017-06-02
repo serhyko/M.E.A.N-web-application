@@ -1,0 +1,35 @@
+
+<table class="table">
+  <thead>
+    <th>Title</th>
+    <th>Body</th>
+    <th >Date</th>
+    <th>Operations</th>
+  </thead>
+  <!-- <tbody>
+    <tr id="bind-html-with-sanitize" ng-repeat="article in articles | orderBy:propertyName:reverse">
+      <td ng-class="{(propertyName === 'title'): reverse}"><a ng-href="#!/article/{{ article._id }}">{{ article.title }}</a></td>
+      <td style="height:65px; display: block; overflow: hidden;" ng-bind-html="article.body" ></td>
+      <td ng-class="{(propertyName === 'cdate'): reverse}">{{ m.article.cdate }}</td>
+      <td>
+        <div class="button-group">
+          <a ng-href="#!/article/{{ article._id }}/edit" class="button blue">Edit</span></a>
+          <a ng-href="#!/article/{{ article._id }}/delete" class="button red">Remove</a>
+        </div>
+      </td>
+    </tr>
+  </tbody> -->
+  <tbody>
+    <tr id="bind-html-with-sanitize" ng-repeat="article in main.articles">
+      <td><a ng-href="#!/article/{{ article._id }}">{{ article.title }}</a></td>
+      <td style="height:65px; display: block; overflow: hidden;" ng-bind-html="article.body" ></td>
+      <td>{{ article.cdate }}</td>
+      <td>
+        <div class="button-group">
+          <a ng-href="#!/article/{{ article._id }}/edit" class="button blue">Edit</span></a>
+          <a ng-href="#!/article/{{ article._id }}/delete" class="button red">Remove</a>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
